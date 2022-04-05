@@ -20,7 +20,7 @@ Requires an audio clip named smash.mp3 to play for smashes and pass.mp3 to play 
 ## input.json
 This is a file containing the JSON for localStorage.offlineScore from PokeSmash. The only property this presently requires is "choices", which is an object with strings as keys, and the string "smash" or the string "pass" as values.
 
-All key strings must resolve when substituted into POKEMON_IMAGE_URL. By default, this means integer strings within [1, 899].
+All key strings must resolve when substituted into POKEMON_IMAGE_URL. By default, this means integer strings within [1, 898].
 
 # Usage
 Run `python .` to automatically download all Pokemon images and generate a video from these images and input.json. The result will be written to out.mp4.

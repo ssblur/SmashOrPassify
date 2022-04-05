@@ -1,0 +1,6 @@
+.env
+tmp/
+input.json
+*.mp3
+out.mp4
+__pycache__

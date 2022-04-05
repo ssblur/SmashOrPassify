@@ -1,4 +1,4 @@
-from modules.composite_clips import composite
+from modules.composite_clips import composite, recomposite
 from modules.generate_clip import Generator 
 from json import load
 
@@ -20,6 +20,6 @@ with Generator("smash.mp3", "pass.mp3") as generator:
         last_clip = False
         for clip in clips:
             if last_clip:
-                clip = composite(last_clip, clip)
+                clip = recomposite(last_clip, clip)
             last_clip = clip
         last_clip.write_videofile(f"out.mp4", fps=12)
